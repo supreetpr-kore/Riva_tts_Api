@@ -69,6 +69,12 @@ Before you try running the Riva client, ensure you meet the following requiremen
 ```bash
 pip install nvidia-riva-client
 ```
+3. Install `flask,numpy and scipy`.
+```bash
+pip install scipy
+pip install numpy
+pip install Flask
+```
 
 Alternatively, you can install from source [nvidia-riva/python-clients](https://github.com/nvidia-riva/python-clients).
 
