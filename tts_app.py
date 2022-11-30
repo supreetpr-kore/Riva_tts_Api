@@ -1,13 +1,13 @@
 
 from flask import Flask, jsonify, request,  Response, send_file
 import numpy as np
-import IPython.display as ipd
+# import IPython.display as ipd
 import riva.client
 from scipy.io.wavfile import write
 
 
 
-auth = riva.client.Auth(uri='54.91.203.184:50051')
+auth = riva.client.Auth(uri='localhost:50051')
 
 riva_tts = riva.client.SpeechSynthesisService(auth)
  
