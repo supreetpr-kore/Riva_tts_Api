@@ -75,6 +75,10 @@ pip install scipy
 pip install numpy
 pip install Flask
 ```
+4. Run Flask service
+```bash
+nohup python tts_app.py > tts_nohup.out &
+```
 
 Alternatively, you can install from source [nvidia-riva/python-clients](https://github.com/nvidia-riva/python-clients).
 
