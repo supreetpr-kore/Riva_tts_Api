@@ -1,5 +1,5 @@
 
-from flask import Flask, jsonify, request,  Response, send_file
+from flask import Flask, jsonify, request,  Response, send_file, make_response
 import numpy as np
 # import IPython.display as ipd
 import riva.client
@@ -12,6 +12,13 @@ auth = riva.client.Auth(uri='localhost:50051')
 riva_tts = riva.client.SpeechSynthesisService(auth)
  
 app = Flask(__name__)
+
+@app.route('/tts/healthcheck')
+def healthcheck():
+    response = {}
+    response["server_status"] = "Server is up and running"
+    resp = make_response(response, 200)
+    return resp
 
 # GET requests will be blocked
 @app.route('/tts', methods=['POST'])
