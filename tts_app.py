@@ -55,4 +55,4 @@ def get_audio_strem(text, sample_rate_hz = 44100,language_code = "en-US",encodin
     return resp
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8002)
+    app.run(host='0.0.0.0', port=8019)
