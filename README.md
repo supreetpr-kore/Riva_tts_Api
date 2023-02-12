@@ -81,7 +81,7 @@ nohup python tts_app.py > tts_nohup.out &
 ```
 5. Health check for tts:
 ```
-curl  http://<server_ip>:8002/tts/healthcheck
+curl  http://<server_ip>:8019/tts/healthcheck
 ```
 
 Alternatively, you can install from source [nvidia-riva/python-clients](https://github.com/nvidia-riva/python-clients).
